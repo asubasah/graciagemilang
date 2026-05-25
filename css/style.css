@@ -10,24 +10,25 @@
    ================================================ */
 :root {
   /* Colors */
-  --color-primary:       #f45a2a;
-  --color-primary-dark:  #d44820;
-  --color-primary-light: #ff7a52;
-  --color-secondary:     #1a2540;
-  --color-secondary-mid: #243358;
-  --color-dark:          #1e2428;
-  --color-dark-mid:      #2f373d;
-  --color-gray:          #7e868c;
-  --color-gray-light:    #b0b8be;
-  --color-border:        #e5e9ed;
-  --color-light:         #f8fbfe;
-  --color-light-mid:     #eef2f7;
+  --color-primary:       #c026d3; /* Let's use a beautiful crimson red: */
+  --color-primary:       #d9383a; /* Premium soft crimson red */
+  --color-primary-dark:  #b32527; /* Deep crimson red */
+  --color-primary-light: #f87171; /* Soft light red */
+  --color-secondary:     #1e1214; /* Luxurious dark maroon-charcoal */
+  --color-secondary-mid: #2d1c1f; /* Medium dark maroon-charcoal */
+  --color-dark:          #1e1214;
+  --color-dark-mid:      #372a2c;
+  --color-gray:          #857577;
+  --color-gray-light:    #c4b5b7;
+  --color-border:        #ebdcd9;
+  --color-light:         #fefaf9;
+  --color-light-mid:     #f5e9e7;
   --color-white:         #ffffff;
 
   /* Gradient */
-  --gradient-primary:    linear-gradient(135deg, #f45a2a 0%, #ff7a52 100%);
-  --gradient-dark:       linear-gradient(135deg, #1a2540 0%, #243358 100%);
-  --gradient-hero:       linear-gradient(to bottom, rgba(26,37,64,0.72) 0%, rgba(26,37,64,0.45) 60%, rgba(26,37,64,0.75) 100%);
+  --gradient-primary:    linear-gradient(135deg, #d9383a 0%, #f87171 100%);
+  --gradient-dark:       linear-gradient(135deg, #1e1214 0%, #2d1c1f 100%);
+  --gradient-hero:       linear-gradient(to bottom, rgba(30,18,20,0.80) 0%, rgba(30,18,20,0.50) 60%, rgba(30,18,20,0.85) 100%);
 
   /* Typography */
   --font-heading:        'Inter', sans-serif;
@@ -74,7 +75,7 @@
   --shadow-md:   0 4px 16px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06);
   --shadow-lg:   0 10px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.08);
   --shadow-xl:   0 20px 60px rgba(0,0,0,0.15), 0 8px 24px rgba(0,0,0,0.10);
-  --shadow-primary: 0 8px 32px rgba(244,90,42,0.30);
+  --shadow-primary: 0 8px 32px rgba(217,56,58,0.30);
 
   /* Transitions */
   --transition-fast:   all 0.18s ease;
