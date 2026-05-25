@@ -315,7 +315,7 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1605647540924-852290f6b0d5?w=1800&q=85');
+  background-image: url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=1800&q=85');
   background-size: cover;
   background-position: center;
   transform: scale(1.05);
