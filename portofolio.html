@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Konveksi Garment — PT Gracia Gemilang Bekasi</title>
+  <meta name="description" content="Galeri portofolio hasil produksi PT Gracia Gemilang: fashion muslim, seragam, baju wanita, baju anak, jaket, dan berbagai kategori garment lainnya." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header id="navbar" class="navbar navbar-transparent" role="banner">
+  <div class="container">
+    <nav class="navbar-inner" aria-label="Navigasi utama">
+      <a href="index.html" class="navbar-logo">
+        <div class="logo-icon">G</div>
+        <div><span class="logo-text-top">Gracia Gemilang</span><span class="logo-text-sub">PT · Konveksi Bekasi</span></div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html"        class="nav-link" data-page="index.html">Beranda</a></li>
+        <li><a href="layanan.html"      class="nav-link" data-page="layanan.html">Layanan</a></li>
+        <li><a href="portofolio.html"   class="nav-link" data-page="portofolio.html">Portofolio</a></li>
+        <li><a href="tentang-kami.html" class="nav-link" data-page="tentang-kami.html">Tentang Kami</a></li>
+        <li><a href="kontak.html"       class="nav-link nav-cta" data-page="kontak.html"><i class="fa-brands fa-whatsapp"></i> Hubungi Kami</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+<nav id="navMobile" class="nav-mobile" aria-hidden="true">
+  <a href="index.html"        class="nav-link" data-page="index.html">Beranda</a>
+  <a href="layanan.html"      class="nav-link" data-page="layanan.html">Layanan</a>
+  <a href="portofolio.html"   class="nav-link" data-page="portofolio.html">Portofolio</a>
+  <a href="tentang-kami.html" class="nav-link" data-page="tentang-kami.html">Tentang Kami</a>
+  <a href="kontak.html"       class="nav-link nav-cta"><i class="fa-brands fa-whatsapp"></i> Hubungi Kami</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div style="position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80');background-size:cover;background-position:center;opacity:0.18;"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,#1a2540 0%,#243358 100%);"></div>
+  <div class="container">
+    <div class="hero-badge" style="margin:0 auto 1.5rem;"><i class="fa-solid fa-images"></i> Portofolio Kami</div>
+    <h1 class="page-hero-title">Galeri <span style="color:var(--color-primary-light)">Hasil Karya</span> Kami</h1>
+    <p class="page-hero-sub">Ratusan produk telah kami selesaikan dengan kualitas terbaik</p>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Beranda</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">Portofolio</span>
+    </nav>
+  </div>
+</section>
+
+<!-- STATS MINI -->
+<section style="background:var(--color-light);padding:2.5rem 0;border-bottom:1px solid var(--color-border);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center;">
+      <div style="padding:1rem;border-right:1px solid var(--color-border);">
+        <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-primary);" data-target="12" data-suffix="+">0+</div>
+        <div style="font-size:0.8rem;color:var(--color-gray);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;">Kategori Produk</div>
+      </div>
+      <div style="padding:1rem;border-right:1px solid var(--color-border);">
+        <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-primary);" data-target="500" data-suffix="+">0+</div>
+        <div style="font-size:0.8rem;color:var(--color-gray);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;">Klien Puas</div>
+      </div>
+      <div style="padding:1rem;border-right:1px solid var(--color-border);">
+        <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-primary);" data-target="2000000" data-suffix="+">0+</div>
+        <div style="font-size:0.8rem;color:var(--color-gray);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;">Produk Diselesaikan</div>
+      </div>
+      <div style="padding:1rem;">
+        <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--color-primary);" data-target="10" data-suffix="+">0+</div>
+        <div style="font-size:0.8rem;color:var(--color-gray);text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;">Tahun Pengalaman</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="galeri" aria-labelledby="galleryTitle">
+  <div class="container">
+    <div class="section-header center reveal">
+      <div class="section-badge"><i class="fa-solid fa-grip"></i> Galeri Produk</div>
+      <h2 class="section-title center" id="galleryTitle">Semua Hasil <span>Produksi Kami</span></h2>
+      <p class="section-subtitle">Klik gambar untuk melihat lebih detail. Filter berdasarkan kategori di bawah ini.</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="gallery-filters reveal" role="group" aria-label="Filter kategori galeri">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">Semua</button>
+      <button class="filter-btn" data-filter="muslim"  aria-pressed="false">Fashion Muslim</button>
+      <button class="filter-btn" data-filter="wanita"  aria-pressed="false">Baju Wanita</button>
+      <button class="filter-btn" data-filter="anak"    aria-pressed="false">Baju Anak</button>
+      <button class="filter-btn" data-filter="seragam" aria-pressed="false">Seragam</button>
+      <button class="filter-btn" data-filter="jaket"   aria-pressed="false">Jaket</button>
+      <button class="filter-btn" data-filter="lainnya" aria-pressed="false">Lainnya</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="gallery-grid stagger-children" id="galleryGrid" role="list">
+
+      <div class="gallery-item" data-category="muslim" role="listitem">
+        <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80" alt="Koleksi gamis fashion muslim produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-star-and-crescent"></i> Fashion Muslim — Gamis</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="seragam" role="listitem">
+        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=80" alt="Seragam kantor custom bordir produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-shirt"></i> Seragam Kantor</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="wanita" role="listitem">
+        <img src="https://images.unsplash.com/photo-1558171813-0c7f4b1c3c8e?w=600&q=80" alt="Dress wanita produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-person-dress"></i> Dress Wanita</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="anak" role="listitem">
+        <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=600&q=80" alt="Baju anak colorful produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-child"></i> Baju Anak</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="jaket" role="listitem">
+        <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=600&q=80" alt="Jaket hoodie produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-layer-group"></i> Jaket Hoodie</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="seragam" role="listitem">
+        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80" alt="Seragam sekolah produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-school"></i> Seragam Sekolah</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="muslim" role="listitem">
+        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80" alt="Abaya dan busana muslim modern produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-star-and-crescent"></i> Abaya Modern</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="wanita" role="listitem">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Blouse wanita produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-person-dress"></i> Blouse Wanita</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="lainnya" role="listitem">
+        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=600&q=80" alt="Sportwear dan baju olahraga produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-dumbbell"></i> Sportwear</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="jaket" role="listitem">
+        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80" alt="Bomber jacket produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-layer-group"></i> Bomber Jacket</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="anak" role="listitem">
+        <img src="https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=600&q=80" alt="Seragam TK dan pakaian anak produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-child"></i> Seragam TK</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="muslim" role="listitem">
+        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80" alt="Mukena dan baju sholat produksi Gracia Gemilang" loading="lazy" width="600" height="450" />
+        <div class="gallery-overlay"><span class="gallery-label"><i class="fa-solid fa-star-and-crescent"></i> Mukena & Baju Sholat</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner" aria-labelledby="portCtaTitle">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <h2 class="cta-title" id="portCtaTitle">Tertarik dengan Hasil Karya Kami?</h2>
+      <p class="cta-subtitle">Hubungi kami sekarang dan diskusikan kebutuhan produksi Anda. Konsultasi gratis!</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/6282318568258?text=Halo%2C%20saya%20tertarik%20dengan%20portofolio%20PT%20Gracia%20Gemilang%20dan%20ingin%20konsultasi." target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+          <i class="fa-brands fa-whatsapp"></i> Hubungi via WhatsApp
+        </a>
+        <a href="kontak.html" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-envelope"></i> Kirim Permintaan
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo"><div class="logo-icon">G</div><div><span class="logo-text-top">Gracia Gemilang</span><span class="logo-text-sub">PT · Konveksi Bekasi</span></div></a>
+        <p class="footer-desc">Penyedia jasa konveksi CMT, Maklon, dan FOB/OEM terpercaya di Kota Bekasi.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/6282318568258" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div><h3 class="footer-heading">Navigasi</h3><ul class="footer-links"><li><a href="index.html" class="footer-link">Beranda</a></li><li><a href="layanan.html" class="footer-link">Layanan</a></li><li><a href="portofolio.html" class="footer-link">Portofolio</a></li><li><a href="tentang-kami.html" class="footer-link">Tentang Kami</a></li><li><a href="kontak.html" class="footer-link">Kontak</a></li></ul></div>
+      <div><h3 class="footer-heading">Layanan</h3><ul class="footer-links"><li><a href="layanan.html#cmt" class="footer-link">Jasa CMT</a></li><li><a href="layanan.html#maklon" class="footer-link">Jasa Maklon</a></li><li><a href="layanan.html#fob" class="footer-link">Jasa FOB/OEM</a></li><li><a href="layanan.html#muslim" class="footer-link">Fashion Muslim</a></li><li><a href="layanan.html#seragam" class="footer-link">Seragam</a></li><li><a href="layanan.html#wanita-anak" class="footer-link">Baju Wanita & Anak</a></li></ul></div>
+      <div><h3 class="footer-heading">Kontak Kami</h3><address style="font-style:normal;">
+        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></div><div class="footer-contact-text"><strong>Alamat</strong>Jalan Mawar 7, Padurenan,<br>Kota Bekasi, Jawa Barat</div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-brands fa-whatsapp"></i></div><div class="footer-contact-text"><strong>WhatsApp / HP</strong><a href="https://wa.me/6282318568258" style="color:rgba(255,255,255,0.6);" target="_blank" rel="noopener">0823-1856-8258</a></div></div>
+        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fa-solid fa-clock"></i></div><div class="footer-contact-text"><strong>Jam Operasional</strong>Senin – Jumat: 08.00 – 17.00<br>Sabtu: 08.00 – 14.00</div></div>
+      </address></div>
+    </div>
+    <div class="footer-bottom"><span>© 2024 PT Gracia Gemilang. Semua hak dilindungi.</span><span>Jasa Konveksi CMT & Maklon di Kota Bekasi</span></div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Tampilan gambar penuh"
+     style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.92);align-items:center;justify-content:center;transition:opacity 0.3s;">
+  <button id="lightboxClose" aria-label="Tutup" style="position:absolute;top:1.5rem;right:1.5rem;color:white;font-size:2rem;background:none;border:none;cursor:pointer;opacity:0.7;">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <img id="lightboxImg" src="" alt="Gambar portofolio diperbesar" style="max-width:92vw;max-height:88vh;border-radius:12px;object-fit:contain;box-shadow:0 20px 80px rgba(0,0,0,0.6);" />
+</div>
+
+<a href="https://wa.me/6282318568258?text=Halo%20PT%20Gracia%20Gemilang%2C%20saya%20ingin%20menanyakan%20jasa%20konveksi." class="whatsapp-float pulse-ring" target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i><span>Chat Sekarang</span>
+</a>
+<button id="backToTop" aria-label="Kembali ke atas" style="position:fixed;bottom:6rem;right:2rem;z-index:980;width:44px;height:44px;border-radius:50%;background:var(--color-secondary);color:white;display:flex;align-items:center;justify-content:center;font-size:1rem;opacity:0;pointer-events:none;transition:opacity 0.3s;box-shadow:var(--shadow-lg);"><i class="fa-solid fa-arrow-up"></i></button>
+<style>.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}@media(max-width:768px){.gallery-grid{grid-template-columns:repeat(2,1fr)!important;}}</style>
+<script src="js/main.js"></script>
+</body>
+</html>

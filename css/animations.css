@@ -1,0 +1,349 @@
+/* ================================================
+   PT GRACIA GEMILANG — Animations
+   animations.css
+   ================================================ */
+
+/* ================================================
+   KEYFRAMES
+   ================================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-8px) rotate(1deg); }
+  66%       { transform: translateY(-4px) rotate(-1deg); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes pulseSoft {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.65; }
+}
+
+@keyframes pulseRing {
+  0%   { transform: scale(1); opacity: 0.6; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+@keyframes bounceY {
+  0%, 100% { transform: translateY(0); }
+  40%       { transform: translateY(-10px); }
+  60%       { transform: translateY(-6px); }
+}
+
+@keyframes draw {
+  from { stroke-dashoffset: 1000; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ================================================
+   HERO ENTRANCE
+   ================================================ */
+.hero-badge {
+  animation: fadeInDown 0.7s ease both;
+  animation-delay: 0.2s;
+}
+
+.hero-title {
+  animation: fadeInUp 0.8s ease both;
+  animation-delay: 0.4s;
+}
+
+.hero-subtitle {
+  animation: fadeInUp 0.8s ease both;
+  animation-delay: 0.6s;
+}
+
+.hero-actions {
+  animation: fadeInUp 0.8s ease both;
+  animation-delay: 0.8s;
+}
+
+.hero-scroll {
+  animation: fadeIn 1s ease both;
+  animation-delay: 1.4s;
+}
+
+/* ================================================
+   STAT COUNTER ANIMATION
+   ================================================ */
+.stat-number[data-target] {
+  animation: countUp 0.6s ease both;
+}
+
+/* ================================================
+   NAVBAR ENTRANCE
+   ================================================ */
+.navbar {
+  animation: fadeInDown 0.5s ease both;
+}
+
+/* ================================================
+   FLOATING ELEMENTS
+   ================================================ */
+.float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.float-delay {
+  animation: float 4s ease-in-out 1.5s infinite;
+}
+
+/* ================================================
+   BACKGROUND DECORATORS
+   ================================================ */
+.bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  animation: floatSlow 10s ease-in-out infinite;
+}
+
+.bg-blob-1 {
+  width: 500px;
+  height: 500px;
+  background: rgba(244, 90, 42, 0.08);
+  top: -100px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.bg-blob-2 {
+  width: 400px;
+  height: 400px;
+  background: rgba(26, 37, 64, 0.06);
+  bottom: -80px;
+  left: -60px;
+  animation-delay: 3s;
+}
+
+.bg-blob-3 {
+  width: 300px;
+  height: 300px;
+  background: rgba(244, 90, 42, 0.05);
+  top: 40%;
+  left: 30%;
+  animation-delay: 6s;
+}
+
+/* ================================================
+   SCROLL REVEAL BASE (overridden in style.css)
+   ================================================ */
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ================================================
+   SHIMMER LOADING
+   ================================================ */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-md);
+}
+
+/* ================================================
+   HOVER LIFT (utility)
+   ================================================ */
+.hover-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ================================================
+   TEXT GRADIENT ANIMATION
+   ================================================ */
+.text-animated-gradient {
+  background: linear-gradient(270deg, var(--color-primary), #ff9a6c, var(--color-primary-dark), var(--color-primary));
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 4s ease infinite;
+}
+
+/* ================================================
+   PAGE TRANSITION
+   ================================================ */
+.page-enter {
+  animation: fadeIn 0.4s ease both;
+}
+
+/* ================================================
+   ICON SPIN on hover
+   ================================================ */
+.icon-spin-hover:hover i {
+  animation: rotate 0.6s ease;
+}
+
+/* ================================================
+   PULSE RING (WhatsApp)
+   ================================================ */
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  background: rgba(37, 211, 102, 0.4);
+  animation: pulseRing 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  z-index: -1;
+}
+
+.whatsapp-float {
+  position: relative;
+}
+
+/* ================================================
+   ANIMATED UNDERLINE
+   ================================================ */
+.underline-anim {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-anim::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.underline-anim:hover::after {
+  width: 100%;
+}
+
+/* ================================================
+   STAGGER CHILDREN
+   ================================================ */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger-children.revealed > *:nth-child(1) { opacity: 1; transform: none; transition-delay: 0.05s; }
+.stagger-children.revealed > *:nth-child(2) { opacity: 1; transform: none; transition-delay: 0.12s; }
+.stagger-children.revealed > *:nth-child(3) { opacity: 1; transform: none; transition-delay: 0.19s; }
+.stagger-children.revealed > *:nth-child(4) { opacity: 1; transform: none; transition-delay: 0.26s; }
+.stagger-children.revealed > *:nth-child(5) { opacity: 1; transform: none; transition-delay: 0.33s; }
+.stagger-children.revealed > *:nth-child(6) { opacity: 1; transform: none; transition-delay: 0.40s; }
+.stagger-children.revealed > *:nth-child(7) { opacity: 1; transform: none; transition-delay: 0.47s; }
+.stagger-children.revealed > *:nth-child(8) { opacity: 1; transform: none; transition-delay: 0.54s; }
+
+/* ================================================
+   PREFERS REDUCED MOTION
+   ================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
